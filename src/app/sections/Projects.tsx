@@ -4,7 +4,7 @@ import React, { useState } from "react";
 import ProjectSlider from "../components/ProjectSlider";
 
 export default function ProjectsSection() {
-  const [selectedProject, setSelectedProject] = useState<any>(null);
+  // const [selectedProject, setSelectedProject] = useState<any>(null);
 
   return (
     <section className="flex flex-col justify-center items-center py-24">
