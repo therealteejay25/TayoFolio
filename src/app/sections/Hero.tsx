@@ -1,6 +1,6 @@
 import Image from "next/image";
 import React from "react";
-import ProjectCarousel from "../components/ProjectSlider";
+import ProjectSlider from "../components/ProjectSlider";
 
 const Hero = () => {
   return (
@@ -30,7 +30,7 @@ const Hero = () => {
 
         {/* Project Slider */}
         <div className="w-full mt-8">
-          <ProjectCarousel />
+          <ProjectSlider />
         </div>
       </div>
 
