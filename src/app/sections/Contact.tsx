@@ -49,7 +49,7 @@ const Contact = () => {
     {
       name: "GitHub",
       href: "https://github.com/therealteejay25",
-      logo: "/GitHubLogo.svg",
+      logo: "/GithubLogo.svg",
     },
   ];
 
