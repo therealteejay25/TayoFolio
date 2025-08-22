@@ -137,10 +137,10 @@ const Contact = () => {
       ))}
     </div>
 
-      {/* Big Gradient Text */}
+      {/* Big Gradient Text
       <div className="text-[13.5rem] text-center font-extrabold text-transparent bg-clip-text bg-gradient-to-b from-[#00000015] to-background">
         Let's Connect
-      </div>
+      </div> */}
 
       {/* Confirmation Modal */}
       {showModal && (
