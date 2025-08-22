@@ -9,7 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@phosphor-icons/react": "github:phosphor-icons/react",
+    "@phosphor-icons/react": "^2.1.10",
     "@tsparticles/react": "^3.0.0",
     "@tsparticles/slim": "^3.9.1",
     "embla-carousel-autoplay": "^8.6.0",

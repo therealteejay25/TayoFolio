@@ -9,8 +9,8 @@ importers:
   .:
     dependencies:
       '@phosphor-icons/react':
-        specifier: github:phosphor-icons/react
-        version: https://codeload.github.com/phosphor-icons/react/tar.gz/57424d5f99b793b585f5c6f5cab76f79772510e5(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
+        specifier: ^2.1.10
+        version: 2.1.10(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       '@tsparticles/react':
         specifier: ^3.0.0
         version: 3.0.0(@tsparticles/engine@3.9.1)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
@@ -368,9 +368,8 @@ packages:
     resolution: {integrity: sha512-nn5ozdjYQpUCZlWGuxcJY/KpxkWQs4DcbMCmKojjyrYDEAGy4Ce19NN4v5MduafTwJlbKc99UA8YhSVqq9yPZA==}
     engines: {node: '>=12.4.0'}
 
-  '@phosphor-icons/react@https://codeload.github.com/phosphor-icons/react/tar.gz/57424d5f99b793b585f5c6f5cab76f79772510e5':
-    resolution: {tarball: https://codeload.github.com/phosphor-icons/react/tar.gz/57424d5f99b793b585f5c6f5cab76f79772510e5}
-    version: 2.1.10
+  '@phosphor-icons/react@2.1.10':
+    resolution: {integrity: sha512-vt8Tvq8GLjheAZZYa+YG/pW7HDbov8El/MANW8pOAz4eGxrwhnbfrQZq0Cp4q8zBEu8NIhHdnr+r8thnfRSNYA==}
     engines: {node: '>=10'}
     peerDependencies:
       react: '>= 16.8'
@@ -2280,7 +2279,7 @@ snapshots:
 
   '@nolyfill/is-core-module@1.0.39': {}
 
-  '@phosphor-icons/react@https://codeload.github.com/phosphor-icons/react/tar.gz/57424d5f99b793b585f5c6f5cab76f79772510e5(react-dom@19.1.0(react@19.1.0))(react@19.1.0)':
+  '@phosphor-icons/react@2.1.10(react-dom@19.1.0(react@19.1.0))(react@19.1.0)':
     dependencies:
       react: 19.1.0
       react-dom: 19.1.0(react@19.1.0)

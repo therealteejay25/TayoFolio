@@ -53,7 +53,7 @@ export default function ServicesSection() {
 
             {/* Dark Overlay */}
             <div className="absolute inset-0 bg-black/60"></div>
-            <div className="absolute inset-0 bg-black/60 h-24 bottom-3"></div>
+            {/* <div className="absolute inset-0 bg-black/60 h-24 bottom-3"></div> */}
 
             {/* Content */}
             <div className="absolute inset-0 flex flex-col justify-end p-6 text-white">
