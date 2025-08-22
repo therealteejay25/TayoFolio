@@ -30,7 +30,7 @@ const Contact = () => {
   };
 
   return (
-    <div className="min-h-screen flex flex-col items-center justify-center w-full mt-32 md:mt-16 pt-16 px-6 relative">
+    <div id='contact' className="min-h-screen flex flex-col items-center justify-center w-full mt-32 md:mt-16 pt-16 px-6 relative">
       {/* Header */}
       <div className="max-w-3xl text-center mb-16 px-4">
         <img src="contact.svg" className="h-10 mx-auto mb-6" alt="Contact" />

@@ -24,9 +24,9 @@ const Navbar = () => {
 
         {/* CTA Button */}
         <div className="hidden md:block">
-          <button className="py-2.5 px-6 bg-gradient-to-b from-dark to-black text-white shadow-lg shadow-dark/25 rounded-xl font-medium hover:scale-105 transition">
+          <a href="#contact" className="py-2.5 px-6 bg-gradient-to-b from-dark to-black text-white shadow-lg shadow-dark/25 rounded-xl font-medium hover:scale-105 transition">
             Let&apos;s Talk
-          </button>
+          </a>
         </div>
 
         {/* Mobile Menu Toggle */}
@@ -53,9 +53,9 @@ const Navbar = () => {
           <MagneticLink><a onClick={() => setIsOpen(false)} href="#services">Services</a></MagneticLink>
           <MagneticLink><a onClick={() => setIsOpen(false)} href="#projects">Projects</a></MagneticLink>
           <MagneticLink><a onClick={() => setIsOpen(false)} href="#contact">Contact</a></MagneticLink>
-            <button className="mt-6 w-full py-3 px-6 bg-gradient-to-b from-dark to-black text-white shadow-lg shadow-dark/25 rounded-xl font-medium">
+            <a href="#contact" className="mt-6 w-full py-3 px-6 bg-gradient-to-b from-dark to-black text-white shadow-lg shadow-dark/25 rounded-xl font-medium">
               Let&apos;s Talk
-            </button>
+            </a>
           </motion.nav>
         )}
       </AnimatePresence>

@@ -24,9 +24,9 @@ const Hero = () => {
           Developing Solutions...
         </h2>
 
-        <button className="py-3 px-8 sm:py-4 sm:px-12 md:px-16 w-full sm:w-auto max-w-xs sm:max-w-sm bg-gradient-to-b from-dark to-black text-white shadow-lg shadow-dark/25 rounded-xl font-medium text-base sm:text-lg hover:scale-105 transition-transform">
+        <a href="#contact" className="py-3 px-8 sm:py-4 sm:px-12 md:px-16 w-full sm:w-auto max-w-xs sm:max-w-sm bg-gradient-to-b from-dark to-black text-white shadow-lg shadow-dark/25 rounded-xl font-medium text-base sm:text-lg hover:scale-105 transition-transform">
           Let&apos;s Talk
-        </button>
+        </a>
 
         {/* Project Slider */}
         <div className="w-full mt-8">
