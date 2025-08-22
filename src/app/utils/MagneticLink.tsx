@@ -1,8 +1,12 @@
 "use client";
 import { useRef } from "react";
 
-export default function MagneticLink({ children }: { children: React.ReactNode }) {
-  const ref = useRef<HTMLAnchorElement>(null);
+export default function MagneticLink({
+  children,
+}: {
+  children: React.ReactElement; // must be a single element (like <a>)
+}) {
+  const ref = useRef<HTMLDivElement>(null);
 
   const handleMouseMove = (e: React.MouseEvent) => {
     if (!ref.current) return;
@@ -19,13 +23,13 @@ export default function MagneticLink({ children }: { children: React.ReactNode }
   };
 
   return (
-    <a
+    <div
       ref={ref}
       onMouseMove={handleMouseMove}
       onMouseLeave={handleMouseLeave}
-      className="inline-block cursor-pointer transition-transform duration-150 ease-out hover:bg-gradient-to-r from-gradientone via-gradienttwo to-gradientthree bg-clip-text hover:text-transparent"
+      className="inline-block transition-transform duration-150 ease-out"
     >
       {children}
-    </a>
+    </div>
   );
 }

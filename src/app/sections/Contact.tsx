@@ -1,4 +1,5 @@
 "use client"
+import Image from 'next/image';
 import React, { useState } from 'react';
 
 const Contact = () => {
@@ -28,6 +29,29 @@ const Contact = () => {
       setLoading(false);
     }
   };
+
+  const socials = [
+    {
+      name: "Whatsapp",
+      href: "https://wa.me/23480869876",
+      logo: "/WhatsappLogo.svg",
+    },
+    {
+      name: "Instagram",
+      href: "https://instagram.com/therealteejay25",
+      logo: "/InstagramLogo.svg",
+    },
+    {
+      name: "X",
+      href: "https://x.com/therealteejay25",
+      logo: "/XLogo.svg",
+    },
+    {
+      name: "GitHub",
+      href: "https://github.com/therealteejay25",
+      logo: "/GitHubLogo.svg",
+    },
+  ];
 
   return (
     <div id='contact' className="min-h-screen flex flex-col items-center justify-center w-full mt-32 md:mt-16 pt-16 px-6 relative">
@@ -86,25 +110,32 @@ const Contact = () => {
 
       {/* Social Icons */}
       <div className="flex justify-center gap-16 pt-12">
-        {['Whatsapp', 'Instagram', 'X', 'GitHub'].map((platform) => (
-          <a
-            key={platform}
-            href="#"
-            target="_blank"
-            rel="noopener noreferrer"
-            className={`
-              p-2 rounded-full border border-black/20 
-              transition-all duration-500 
-              hover:border-transparent 
-              hover:bg-[conic-gradient(from_0deg_at_50%_50%,var(--color-gradientone),var(--color-gradienttwo),var(--color-gradientthree),var(--color-gradientone))] 
-              hover:bg-[length:300%_300%] 
-              hover:animate-[gradientMove_3s_linear_infinite]
-            `}
-          >
-            <img src={`${platform}Logo.svg`} className="h-6" />
-          </a>
-        ))}
-      </div>
+      {socials.map((platform) => (
+        <a
+          key={platform.name}
+          href={platform.href}
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label={platform.name}
+          className={`
+            p-2 rounded-full border border-black/20 
+            transition-all duration-500 
+            hover:border-transparent 
+            hover:bg-[conic-gradient(from_0deg_at_50%_50%,var(--color-gradientone),var(--color-gradienttwo),var(--color-gradientthree),var(--color-gradientone))] 
+            hover:bg-[length:300%_300%] 
+            hover:animate-[gradientMove_3s_linear_infinite]
+          `}
+        >
+          <Image
+            src={platform.logo}
+            alt={`${platform.name} logo`}
+            width={24}
+            height={24}
+            className="h-6 w-6"
+          />
+        </a>
+      ))}
+    </div>
 
       {/* Big Gradient Text */}
       <div className="text-[13.5rem] text-center font-extrabold text-transparent bg-clip-text bg-gradient-to-b from-[#00000015] to-background">
