@@ -4,7 +4,7 @@ import ProjectSlider from "../components/ProjectSlider";
 
 const Hero = () => {
   return (
-    <section className="relative flex flex-col justify-center items-center min-h-screen bg-background px-4 pt-24 sm:pt-32">
+    <section id="home" className="relative flex flex-col justify-center items-center min-h-screen bg-background px-4 pt-24 sm:pt-32">
       {/* Top badge */}
       <div className="mb-8">
         {/* <div className="bg-gradient-to-r rounded-full from-gradientone via-gradienttwo to-gradientthree p-[2px]">

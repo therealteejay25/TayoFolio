@@ -22,7 +22,7 @@ const services = [
 
 export default function ServicesSection() {
   return (
-    <section className="h-screen flex flex-col items-center justify-center py-16 px-6">
+    <section id="services" className="h-screen flex flex-col items-center justify-center my-60 md:my-10 py-16 px-6">
         {/* <h3 className='bg-gradient-to-b to-accenttwo bg-clip-text text-transparent from-accent font-medium flex items-center justify-center gap-2 py-8'><img src="logo.svg" className='h-4' alt="" />SERVICES</h3> */}
         <div className="max-w-3xl text-center mb-24">
         <img src="services.svg" className="h-10 mx-auto mb-6" alt="About" />
@@ -53,6 +53,7 @@ export default function ServicesSection() {
 
             {/* Dark Overlay */}
             <div className="absolute inset-0 bg-black/60"></div>
+            <div className="absolute inset-0 bg-black/60 h-24 bottom-3"></div>
 
             {/* Content */}
             <div className="absolute inset-0 flex flex-col justify-end p-6 text-white">

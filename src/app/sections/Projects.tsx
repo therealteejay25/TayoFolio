@@ -7,7 +7,7 @@ export default function ProjectsSection() {
   // const [selectedProject, setSelectedProject] = useState<any>(null);
 
   return (
-    <section className="flex flex-col justify-center items-center py-24">
+    <section id="projects" className="flex flex-col justify-center items-center my-16 md:my-6 py-24">
       <div className="max-w-3xl text-center mb-24 px-4">
         <img src="projects.svg" className="h-10 mx-auto mb-6" alt="Projects" />
         <h1 className="text-4xl md:text-5xl font-semibold leading-tight">
