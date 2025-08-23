@@ -109,7 +109,7 @@ const Contact = () => {
       </form>
 
       {/* Social Icons */}
-      <div className="flex justify-center gap-16 pt-12">
+      <div className="flex justify-center gap-16 pb-6 pt-12">
       {socials.map((platform) => (
         <a
           key={platform.name}
@@ -135,6 +135,7 @@ const Contact = () => {
           />
         </a>
       ))}
+      <p className='text-sm text-black/65 py-5'>Made with ❣️ + caffeine by Tayo.</p>
     </div>
 
       {/* Big Gradient Text
